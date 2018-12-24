@@ -13,8 +13,8 @@ X = np.array(df.drop(['class'], 1))
 # y=label column
 y = np.array(df['class'])
 
-# split the data into two parts. 80% of data for train and 20% of data for test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+# split the data into two parts. 60% of data for train and 40% of data for test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
 # use classification algorithm
 clf = neighbors.KNeighborsClassifier()
